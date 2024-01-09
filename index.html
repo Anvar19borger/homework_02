@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Внутри страницы добавьте форму с использованием тега <form>.
+Добавьте следующие поля ввода:
+Имя (текстовое поле)
+Фамилия (текстовое поле)
+Электронная почта (текстовое поле с типом email)
+parol (поле для ввода пароля)
+Пол (выбор из опций: Мужской, Женский, Другой)
+data rajdenija (поле для ввода даты)
+Согласие с условиями использования (чекбокс)
+Добавьте кнопку "Зарегистрироваться" для отправки формы.
+Примените атрибуты required к полям по выбору, чтобы обеспечить обязательное заполнение. -->
+
+<body>
+    <h1>Registracija</h1>
+<form >
+    <label >
+        <p>Vvedite imja:</p>
+        <input type="text" name="imja" placeholder="imja" required>
+    </label>
+    <label >
+        <p>Vvedite familiju:</p>
+        <input type="text" name="Familija" placeholder="Familija">
+    </label>
+    <label >
+        <p>Vvedite adres elektronnoi pochti: </p>
+        <input type="email" name="email" placeholder="email" required>
+    </label>
+    <label >
+        <p>Vvedite parol:</p>
+        <input type="password" name="parol" placeholder="parol" required>
+    </label>
+    <label >
+        <p>Vvedite parol povtorno:</p>
+        <input type="password" name="parol" placeholder="parol" required>
+    </label>
+    <label >
+        <p>Viberite pol</p>
+        <select name="category"required >
+            <option value="male">Mujskoi</option>
+            <option value="female">Jenskii</option>
+            <option value="other">Gender</option>
+        </select>
+    </label>
+    <label >
+        <p>Vvedite datu rojdenija:</p>
+        <input type="date" name="data rajdenija" placeholder="data rajdenija" required >
+    </label>
+    <label >
+        <input type="checkbox" name="terms" required>
+           Soglasie s usloviemi ispolsivanija 
+    </label>
+<button>Saregestririvatsja</button>
+</form>
+    
+</body>
+</html>
